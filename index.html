@@ -30,6 +30,18 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
+    <!-- Javascript Functions -->
+    <script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
 
 </head>
 
@@ -99,6 +111,9 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Home</h2>
                    <p>My name is Shaun.</p>
+                   <a href="#" onclick="toggle_visibility('have_we_met');">Have we met?</a>
+		   <div id="have_we_met" style = "display:none;">Have we met? </div>
+
             </div>
         </div>
        </div>
