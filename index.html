@@ -29,6 +29,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("about_me").toggle();
+    });
+});
+</script>
 
 </head>
 
@@ -54,8 +63,13 @@
                         <a href="#page-top"></a>
                     </li>
                       <li>
+                        <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    
+                     <li>
                         <a class="page-scroll" href="#resume">Resume</a>
                     </li>
+                    
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
@@ -85,6 +99,20 @@
             </div>
         </div>
     </header>
+
+    <!-- Home Section -->
+    <section id="home" class="content-section text-center">
+        <div class="projects-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Home</h2>
+                   <p>My name is Shaun.</p>
+                   <button>Have We Met?</button>
+                   <div id='about_me'> 'Stuff here.'</div>
+            </div>
+        </div>
+       </div>
+    </section>
 
 
     <!-- Resume Section -->
